@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  FoodTrackerRWT
 //
-//  Created by Richard Tanner on 2/15/19.
+//  Created by Rich Tanner on 2/15/19.
 //  Copyright © 2019 Richard Tanner. All rights reserved.
 //
 
