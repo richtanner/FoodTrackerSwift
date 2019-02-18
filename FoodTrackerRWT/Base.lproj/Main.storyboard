@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7WA-75-33H">
-                                <rect key="frame" x="20" y="64" width="374" height="478.5"/>
+                                <rect key="frame" x="20" y="64" width="374" height="530.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vU-m3-gDK">
                                         <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
@@ -40,30 +40,38 @@
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cdc-e5-HAU"/>
                                         </connections>
                                     </button>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="xt5-62-Rt2">
+                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="xt5-62-Rt2">
                                         <rect key="frame" x="0.0" y="104.5" width="374" height="374"/>
                                         <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="xt5-62-Rt2" secondAttribute="height" multiplier="1:1" id="ZAV-er-js2"/>
+                                            <constraint firstAttribute="width" secondItem="xt5-62-Rt2" secondAttribute="height" multiplier="1:1" id="722-Wr-Ebz"/>
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="lnJ-rY-zpL" appends="YES" id="NXK-yI-lkZ"/>
                                         </connections>
                                     </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QZk-gq-Gbc" customClass="RatingControl" customModule="FoodTrackerRWT" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="486.5" width="252" height="44"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="starCount">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="xt5-62-Rt2" firstAttribute="leading" secondItem="7WA-75-33H" secondAttribute="leading" id="BDM-d1-hTi"/>
-                                    <constraint firstAttribute="trailing" secondItem="cNL-tn-MaS" secondAttribute="trailing" id="X1s-3U-yOl"/>
-                                    <constraint firstAttribute="trailing" secondItem="xt5-62-Rt2" secondAttribute="trailing" id="zvP-iu-Ptn"/>
+                                    <constraint firstItem="cNL-tn-MaS" firstAttribute="leading" secondItem="7WA-75-33H" secondAttribute="leading" id="ASd-0K-Snf"/>
+                                    <constraint firstItem="xt5-62-Rt2" firstAttribute="leading" secondItem="7WA-75-33H" secondAttribute="leading" id="Rma-h8-anI"/>
+                                    <constraint firstAttribute="trailing" secondItem="cNL-tn-MaS" secondAttribute="trailing" id="SYJ-Iy-HTj"/>
+                                    <constraint firstAttribute="trailing" secondItem="xt5-62-Rt2" secondAttribute="trailing" id="a42-oM-ePL"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7WA-75-33H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1js-qC-zme"/>
-                            <constraint firstAttribute="trailing" secondItem="7WA-75-33H" secondAttribute="trailing" constant="20" id="BGu-hI-Wp4"/>
-                            <constraint firstItem="7WA-75-33H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="eOq-gl-n6G"/>
-                            <constraint firstItem="7WA-75-33H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="t58-XK-9Lg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7WA-75-33H" secondAttribute="trailing" constant="20" id="4yd-ps-GOV"/>
+                            <constraint firstItem="7WA-75-33H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="E70-XM-t0I"/>
+                            <constraint firstItem="7WA-75-33H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Jfy-h3-L15"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
