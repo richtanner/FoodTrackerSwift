@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "beeftaco.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "pizza2.jpeg",
       "scale" : "2x"
     },
     {
