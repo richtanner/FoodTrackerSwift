@@ -27,30 +27,33 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zFE-Bx-m9G">
-                                            <rect key="frame" x="0.0" y="0.0" width="90" height="89.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="90" id="DBA-7w-EeB"/>
+                                                <constraint firstAttribute="height" constant="90" id="TqS-GL-xsY"/>
+                                                <constraint firstAttribute="width" constant="90" id="xwK-Ac-Qdm"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dn-c1-vc9">
-                                            <rect key="frame" x="98" y="11" width="296" height="21"/>
+                                            <rect key="frame" x="98" y="8" width="296" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Te1-Pl-yCa" customClass="RatingControl" customModule="FoodTrackerRWT" customModuleProvider="target">
-                                            <rect key="frame" x="98" y="40" width="252" height="44"/>
+                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Te1-Pl-yCa" customClass="RatingControl" customModule="FoodTrackerRWT" customModuleProvider="target">
+                                            <rect key="frame" x="98" y="36.5" width="252" height="44"/>
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="0dn-c1-vc9" firstAttribute="trailing" secondItem="zI2-V7-wrb" secondAttribute="trailingMargin" id="0iK-OF-LXU"/>
-                                        <constraint firstItem="zFE-Bx-m9G" firstAttribute="top" secondItem="zI2-V7-wrb" secondAttribute="top" id="FZu-CQ-OwS"/>
-                                        <constraint firstItem="0dn-c1-vc9" firstAttribute="leading" secondItem="zFE-Bx-m9G" secondAttribute="trailing" constant="8" symbolic="YES" id="Vt7-b9-oRb"/>
-                                        <constraint firstItem="0dn-c1-vc9" firstAttribute="leading" secondItem="Te1-Pl-yCa" secondAttribute="leading" id="Wct-D8-WdU"/>
-                                        <constraint firstAttribute="bottom" secondItem="zFE-Bx-m9G" secondAttribute="bottom" id="g3y-8Z-Bem"/>
-                                        <constraint firstItem="Te1-Pl-yCa" firstAttribute="top" secondItem="0dn-c1-vc9" secondAttribute="bottom" constant="8" symbolic="YES" id="kTn-mV-9Fm"/>
-                                        <constraint firstItem="zFE-Bx-m9G" firstAttribute="leading" secondItem="zI2-V7-wrb" secondAttribute="leading" id="nsr-5K-nKQ"/>
-                                        <constraint firstItem="0dn-c1-vc9" firstAttribute="top" secondItem="zI2-V7-wrb" secondAttribute="topMargin" id="vRi-39-AJC"/>
+                                        <constraint firstItem="Te1-Pl-yCa" firstAttribute="top" secondItem="0dn-c1-vc9" secondAttribute="bottom" constant="8" id="2fd-h9-KeO"/>
+                                        <constraint firstAttribute="bottom" secondItem="Te1-Pl-yCa" secondAttribute="bottom" constant="9" id="MVT-ox-ikd"/>
+                                        <constraint firstItem="Te1-Pl-yCa" firstAttribute="top" secondItem="0dn-c1-vc9" secondAttribute="bottom" constant="8" id="Vta-Qt-UYl"/>
+                                        <constraint firstItem="zFE-Bx-m9G" firstAttribute="leading" secondItem="zI2-V7-wrb" secondAttribute="leading" id="YWt-ei-gJf"/>
+                                        <constraint firstItem="0dn-c1-vc9" firstAttribute="top" secondItem="zI2-V7-wrb" secondAttribute="top" constant="8" id="Yzo-g3-oWd"/>
+                                        <constraint firstAttribute="trailing" secondItem="0dn-c1-vc9" secondAttribute="trailing" constant="20" id="fEx-9L-x8Z"/>
+                                        <constraint firstItem="Te1-Pl-yCa" firstAttribute="leading" secondItem="zFE-Bx-m9G" secondAttribute="trailing" constant="8" id="nZq-ez-tQz"/>
+                                        <constraint firstItem="0dn-c1-vc9" firstAttribute="leading" secondItem="zFE-Bx-m9G" secondAttribute="trailing" constant="8" id="rOh-yZ-aGE"/>
+                                        <constraint firstItem="zFE-Bx-m9G" firstAttribute="top" secondItem="zI2-V7-wrb" secondAttribute="top" id="t6d-sJ-oUa"/>
+                                        <constraint firstItem="0dn-c1-vc9" firstAttribute="leading" secondItem="zFE-Bx-m9G" secondAttribute="trailing" constant="8" id="uFo-z8-VT3"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
