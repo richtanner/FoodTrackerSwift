@@ -38,7 +38,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Te1-Pl-yCa" customClass="RatingControl" customModule="FoodTrackerRWT" customModuleProvider="target">
+                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Te1-Pl-yCa" customClass="RatingControl" customModule="FoodTrackerRWT" customModuleProvider="target">
                                             <rect key="frame" x="98" y="40" width="252" height="44"/>
                                         </stackView>
                                     </subviews>
@@ -57,6 +57,7 @@
                                     <outlet property="nameLabel" destination="0dn-c1-vc9" id="aau-2D-Oke"/>
                                     <outlet property="photoImageView" destination="zFE-Bx-m9G" id="DwN-4V-Nke"/>
                                     <outlet property="ratingControl" destination="Te1-Pl-yCa" id="Ur7-hH-7RD"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="4G6-Eb-7Wa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -193,10 +194,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rgb-nJ-tAr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1043.4782608695652" y="133.25892857142856"/>
+            <point key="canvasLocation" x="1065" y="502"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="320" height="320"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4G6-Eb-7Wa"/>
+    </inferredMetricsTieBreakers>
 </document>
